@@ -43,8 +43,8 @@ export default function ImageSlideshow() {
           src={image.image}
           className={index === currentImageIndex ? classes.active : ""}
           alt={image.alt}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         />
       ))}
     </div>
